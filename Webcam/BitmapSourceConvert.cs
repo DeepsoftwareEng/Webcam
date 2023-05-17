@@ -17,7 +17,6 @@ namespace Webcam
         {
             return BitmapSourceConvert.ToBitmapSource(image.Mat);
         }
-
         public static BitmapSource ToBitmapSource(this Mat mat)
         {
             return Application.Current.Dispatcher.Invoke(() =>

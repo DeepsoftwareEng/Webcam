@@ -9,5 +9,11 @@
     <Grid>
         <Border Height="200" Width="200" Margin="528,117,72,117" BorderBrush="Black" BorderThickness="1"/>
         <Image x:Name="webcam" Height="200" Width="200" Margin="528,117,72,117"/>
+        <Button Height="50" Width="50" Background="Red" Click="AddWorkerButton_Click" Margin="136,150,614,234"/>
+        <Button  Height="50" Width="50" Background="Green" Margin="136,294,614,90" Click="Button_Click" />
+        <Button Height="59" Width="70" Background="Yellow" Click="Button_Click_1" Margin="182,28,548,347"/>
+        <TextBox Height="20" Width="50" x:Name="WorkerName" Margin="52,87,698,327"/>
+        <Image x:Name="result" Height="200" Width="200" Margin="275,117,325,117"/>
+        <Border Height="200" Width="200" Margin="275,117,325,117" BorderBrush="Black" BorderThickness="1"/>
     </Grid>
 </Window>
