@@ -75,19 +75,16 @@ namespace Webcam
                     }
 
                     // Update the image control with the latest image
-                    //result.Source = BitmapSourceConvert.ToBitmapSource(image);
-                    Image<Gray, byte> gray = frame.ToImage<Gray, byte>();
-                    BitmapSource bitmap = gray.ToBitmapSource();
-                    result.Source = bitmap;
+                    result.Source = BitmapSourceConvert.ToBitmapSource(image);
                     // Wait for the user to click on the image control
                     if (iscapture == true)
                     {
                          // Crop the face image
                          Rectangle face = faces[0];
                          Image<Gray, byte> faceImage = image.Convert<Gray, byte>().Copy(face);
-                         
+                        faceImage.Save(@"C:\\Users\\minhv\\Desktop\\test.png");
 
-                         MessageBox.Show("Worker added successfully.");
+                        MessageBox.Show("Worker added successfully.");
                     }
                     break;
                 }
